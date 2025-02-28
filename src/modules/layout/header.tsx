@@ -18,7 +18,7 @@ export function Header() {
         <nav>
           <ul className="flex items-center gap-x-10">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/studio">Studio</Link>
             </li>
             <li>
               <Link href="/about">About</Link>
@@ -27,6 +27,8 @@ export function Header() {
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
+        </nav>
+        <div className="flex items-center gap-x-4">
           <SignedIn>
             <UserButton />
           </SignedIn>
@@ -34,7 +36,7 @@ export function Header() {
             <SignInButton />
             <SignUpButton />
           </SignedOut>
-        </nav>
+        </div>
       </div>
     </header>
   );
